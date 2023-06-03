@@ -51,7 +51,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SnowCaucasus",
         productName: "TenPuzzle",
-        productVersion: "1.1",
+        productVersion: "1.2",
         showBanner: unityShowBanner,
       };
 
@@ -62,12 +62,12 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 111 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-        }).catch((message) => {
-          alert(message);
-        });
-      };
+              }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+              }).catch((message) => {
+                alert(message);
+              });
+            };
       document.body.appendChild(script);
     </script>
   </body>
